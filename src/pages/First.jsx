@@ -1,31 +1,31 @@
 import React from "react";
 
-import atta from '../../src/Pages/img/atta.webp';
-import cookingOil from '../../src/Pages/img/cookingOil.webp';
-import ghee from '../../src/Pages/img/ghee.webp';
-import masale from '../../src/Pages/img/masale.webp';
-import fruits from '../../src/Pages/img/fruits.webp';
-import dairy from '../../src/Pages/img/dairy.webp';
-import dryFruits from '../../src/Pages/img/dryFruits.webp';
-import organicfood from '../../src/Pages/img/organicfood.webp';
+import atta from './img/atta.webp';
+import cookingOil from './img/cookingOil.webp';
+import ghee from './img/ghee.webp';
+import masale from './img/masale.webp';
+import fruits from './img/fruits.webp';
+import dairy from './img/dairy.webp';
+import dryFruits from './img/dryFruits.webp';
+import organicfood from './img/organicfood.webp';
 
-import biscuits from '../../src/Pages/img/Snacks/biscuits.webp';
-import breakfast from '../../src/Pages/img/Snacks/breakfast.webp';
-import pasta from '../../src/Pages/img/Snacks/pasta.webp';
-import jams from '../../src/Pages/img/Snacks/jams.webp';
-import sweets from '../../src/Pages/img/Snacks/sweets.webp';
-import chips from '../../src/Pages/img/Snacks/chips.webp';
-import drinks from '../../src/Pages/img/Snacks/drinks.webp';
-import tea from '../../src/Pages/img/Snacks/tea.webp';
+import biscuits from './img/Snacks/biscuits.webp';
+import breakfast from './img/Snacks/breakfast.webp';
+import pasta from './img/Snacks/pasta.webp';
+import jams from './img/Snacks/jams.webp';
+import sweets from './img/Snacks/sweets.webp';
+import chips from './img/Snacks/chips.webp';
+import drinks from './img/Snacks/drinks.webp';
+import tea from './img/Snacks/tea.webp';
 
-import oral from '../../src/Pages/img/Beauty/oral.webp';
-import hair from '../../src/Pages/img/Beauty/hair.webp';
-import bath from '../../src/Pages/img/Beauty/bath.webp';
-import skin from '../../src/Pages/img/Beauty/skin.webp';
-import femini from '../../src/Pages/img/Beauty/femini.webp';
-import babycare from '../../src/Pages/img/Beauty/babycare.webp';
-import beauty1 from '../../src/Pages/img/Beauty/beauty1.webp';
-import health from '../../src/Pages/img/Beauty/health.webp';
+import oral from './img/Beauty/oral.webp';
+import hair from './img/Beauty/hair.webp';
+import bath from './img/Beauty/bath.webp';
+import skin from './img/Beauty/skin.webp';
+import femini from './img/Beauty/femini.webp';
+import babycare from './img/Beauty/babycare.webp';
+import beauty1 from './img/Beauty/beauty1.webp';
+import health from './img/Beauty/health.webp';
 
 
 // Reusable component for category rows (responsive)

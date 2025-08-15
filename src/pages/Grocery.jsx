@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 
 // Main banner image
-import Main from "../Pages/img/Grocery/Main.webp";
+import Main from "./img/Grocery/Main.webp";
 
 // Category images
-import rice from "../Pages/img/Grocery/rice.jpeg";
-import cookingoil from "../Pages/img/Grocery/cookingoil.jpeg";
-import ghee12 from "../Pages/img/Grocery/ghee12.jpeg";
-import flour from "../Pages/img/Grocery/flour.jpeg";
-import spices from "../Pages/img/Grocery/spices.jpeg";
-import pulses from "../Pages/img/Grocery/pulses.jpeg";
-import dry from "../Pages/img/Grocery/dry.jpeg";
-import organo from "../Pages/img/Grocery/organo.jpg";
-import salt from "../Pages/img/Grocery/salt.jpeg";
+import rice from "./img/Grocery/rice.jpeg";
+import cookingoil from "./img/Grocery/cookingoil.jpeg";
+import ghee12 from "./img/Grocery/ghee12.jpeg";
+import flour from "./img/Grocery/flour.jpeg";
+import spices from "./img/Grocery/spices.jpeg";
+import pulses from "./img/Grocery/pulses.jpeg";
+import dry from "./img/Grocery/dry.jpeg";
+import organo from "./img/Grocery/organo.jpg";
+import salt from "./img/Grocery/salt.jpeg";
 
 // Product images
-import rice11 from "../Pages/img/Rice/rice11.jpg";
-import rice13 from "../Pages/img/Rice/rice13.jpg";
-import rice14 from "../Pages/img/Rice/rice14.jpg";
-import rice15 from "../Pages/img/Rice/rice15.jpg";
-import rice16 from "../Pages/img/Rice/rice16.jpg";
-import rice17 from "../Pages/img/Rice/rice17.jpg";
-import rice18 from "../Pages/img/Rice/rice18.jpg";
-import rice19 from "../Pages/img/Rice/rice19.jpg";
-import rice20 from "../Pages/img/Rice/rice20.jpg";
-import rice21 from "../Pages/img/Rice/rice21.jpg";
-import rice22 from "../Pages/img/Rice/rice22.jpg";
-import rice23 from "../Pages/img/Rice/rice23.jpg";
-import rice24 from "../Pages/img/Rice/rice24.jpg";
-import rice25 from "../Pages/img/Rice/rice25.jpg";
-import rice26 from "../Pages/img/Rice/rice26.jpg";
+import rice11 from "./img/Rice/rice11.jpg";
+import rice13 from "./img/Rice/rice13.jpg";
+import rice14 from "./img/Rice/rice14.jpg";
+import rice15 from "./img/Rice/rice15.jpg";
+import rice16 from "./img/Rice/rice16.jpg";
+import rice17 from "./img/Rice/rice17.jpg";
+import rice18 from "./img/Rice/rice18.jpg";
+import rice19 from "./img/Rice/rice19.jpg";
+import rice20 from "./img/Rice/rice20.jpg";
+import rice21 from "./img/Rice/rice21.jpg";
+import rice22 from "./img/Rice/rice22.jpg";
+import rice23 from "./img/Rice/rice23.jpg";
+import rice24 from "./img/Rice/rice24.jpg";
+import rice25 from "./img/Rice/rice25.jpg";
+import rice26 from "./img/Rice/rice26.jpg";
 
 const Grocery = () => {
   const quantityOptions = ["1 Kg", "2 Kg", "5 Kg", "10 Kg"];

@@ -1,10 +1,10 @@
-import cleaning from "../../src/Pages/img/household/cleaning.webp";
-import freshner from "../../src/Pages/img/household/freshner.webp";
-import detergent from "../../src/Pages/img/household/detergent.webp";
-import homei from "../../src/Pages/img/household/homei.webp";
+import cleaning from "./img/household/cleaning.webp";
+import freshner from "./img/household/freshner.webp";
+import detergent from "./img/household/detergent.webp";
+import homei from "./img/household/homei.webp";
 
-import img1 from "../../src/Pages/img/img1.jpeg"; 
-import img2 from "../../src/Pages/img/img2.jpeg";     
+import img1 from "./img/img1.jpeg"; 
+import img2 from "./img/img2.jpeg";     
 
 const CategoryRow = ({ items }) => (
   <ul className="flex flex-wrap justify-center gap-6 text-xs mx-4 sm:mx-10 mb-1">
