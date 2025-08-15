@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
-import First from '../Pages/First'
-import Second from '../Pages/Second'
-import Grocery from '../Pages/Grocery'
+import First from '../pages/First'
+import Second from '../pages/Second'
+import Grocery from '../pages/Grocery'
+
 const Hero = () => {
   return (
     <div>
         <Navbar/>
-        <First/> 
+        <First/>
         <Second/>
         <Grocery/>
     </div>
