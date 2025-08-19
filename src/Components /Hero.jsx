@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
-import First from '../Pages/First'
-import Second from '../Pages/Second'
-import Grocery from '../Pages/Grocery'
+import First from '../Pages/First.jsx'
+import Second from '../Pages/Second.jsx'
+import Grocery from '../Pages/Grocery.jsx'
 
 const Hero = () => {
   return (
