@@ -1,7 +1,7 @@
 import React from "react";
 
 import atta from './img/atta.webp';
-import cookingOil from './img/cookingOil.webp';
+import cookingOil from './img/cookingoil.webp';
 import ghee from './img/ghee.webp';
 import masale from './img/masale.webp';
 import fruits from './img/fruits.webp';
