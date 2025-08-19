@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import kt1 from "../assets/kt1.png";
 import search from "../assets/search.png";
 import category from "../assets/category.png";
@@ -34,6 +35,7 @@ const categories = [
 const Navbar = () => {
   const scrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     if (scrollRef.current) {
@@ -53,16 +55,31 @@ const Navbar = () => {
     }
   };
 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
       {/* Top Navbar */}
       <div className="flex flex-wrap justify-between md:justify-around items-center bg-gray-200 py-3 px-4 md:px-0 gap-3">
+        {/* Logo */}
         <div className="mb-0">
-          <img src={kt1} className="h-10 p-1" alt="Logo" />
+          <li
+            className="flex items-center gap-1 sm:gap-2 cursor-pointer"
+            onClick={handleLogoClick}
+          >
+            <img src={kt1} className="h-10 p-1" alt="Logo" />
+          </li>
         </div>
-        <div className="text-xs md:text-sm font-medium">
-          Current Location
-        </div>
+
+        <div className="text-xs md:text-sm font-medium">Current Location</div>
+
+        {/* Menu Items */}
         <div className="w-full md:w-auto">
           <nav>
             <ul className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-7 text-xs md:text-sm">
@@ -82,7 +99,10 @@ const Navbar = () => {
                 <img src={cart} className="h-4" alt="Cart" />
                 <span>Cart</span>
               </li>
-              <li className="flex items-center gap-1 sm:gap-2 cursor-pointer">
+              <li
+                className="flex items-center gap-1 sm:gap-2 cursor-pointer"
+                onClick={handleLoginClick}
+              >
                 <img src={login} className="h-4" alt="Login" />
                 <span>Login</span>
               </li>
@@ -91,7 +111,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Items Section with Buttons */}
+      {/* Categories Section */}
       <div className="relative flex items-center px-4 md:px-12 py-3">
         {currentIndex > 0 && (
           <button
