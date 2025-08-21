@@ -1,12 +1,12 @@
 import React from "react";
 
 import atta from './img/atta.webp';
-import cookingOil from './img/cookingoil.webp';
+import cookingoil from './img/cookingoil.webp';
 import ghee from './img/ghee.webp';
 import masale from './img/masale.webp';
 import fruits from './img/fruits.webp';
 import dairy from './img/dairy.webp';
-import dryFruits from './img/dryFruits.webp';
+import dryfruits from './img/dryfruits.webp';
 import organicfood from './img/organicfood.webp';
 
 import biscuits from './img/Snacks/biscuits.webp';
@@ -47,12 +47,12 @@ const CategoryRow = ({ items }) => (
 const First = () => {
   const row1 = [
     { img: atta, label: "Atta, Rice & Dal" },
-    { img: cookingOil, label: "Cooking Oil" },
+    { img: cookingoil, label: "Cooking Oil" },
     { img: ghee, label: "Ghee & Vanaspati" },
     { img: masale, label: "Masala & Spices" },
     { img: fruits, label: "Fruits & Vegetables" },
     { img: dairy, label: "Dairy, Bread & Eggs" },
-    { img: dryFruits, label: "Dry Fruits" },
+    { img: dryfruits, label: "Dry Fruits" },
     { img: organicfood, label: "Organic Foods" },
   ];
 
