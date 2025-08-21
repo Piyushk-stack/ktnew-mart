@@ -32,7 +32,7 @@ const OTPLogin = () => {
   if (!isOpen) return null; // hide popup if closed
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-blur bg-opacity-50 z-50">
       <div className="w-[90%] max-w-md bg-white shadow-lg rounded-2xl p-6 space-y-6 relative">
         {/* Close button */}
         <button

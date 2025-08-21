@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div>
         <Navbar/>
-        <First/>
+        <First/>.  
         <Second/>
         <Grocery/>
     </div>
