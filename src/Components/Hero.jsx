@@ -3,6 +3,8 @@ import Navbar from './Navbar.jsx'
 import First from '../pages/First.jsx'
 import Second from '../pages/Second.jsx'
 import Grocery from '../pages/Grocery.jsx'
+import Footer from './Footer.jsx'
+import PackagedFood from '../pages/PackagedFood.jsx'
 
 const Hero = () => {
   return (
@@ -10,7 +12,9 @@ const Hero = () => {
         <Navbar/>
         <First/>.  
         <Second/>
-        <Grocery/>
+         <Grocery/> 
+        <PackagedFood/>
+        <Footer/>
     </div>
   )
 }
