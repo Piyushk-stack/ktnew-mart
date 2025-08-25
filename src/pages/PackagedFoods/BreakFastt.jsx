@@ -1,39 +1,34 @@
-import React from "react";
+import React, {UseState} from "react";
 // Main
-import Biscuits_Cookies from "../pages/PackagedFoods/Biscuits/Biscuits_Cookies.webp";
 
-// cards image
-import Breakfastmain from "../pages/PackagedFoods/BreakFast/Breakfastmain.webp";
-import Chocolatesmain from "../pages/PackagedFoods/Chocolates/Chocolatesmain.webp";
-import Ketchupmain from "../pages/PackagedFoods/Ketchups/Ketchupmain.webp";
-import Pastamain from "../pages/PackagedFoods/Pasta&Noodles/Pastamain.webp";
-import Jamsmain from "../pages/PackagedFoods/Jams/Jamsmain.webp";
-import Instantmain from "../pages/PackagedFoods/InstantFood/Instantmain.webp";
-import Snacksmain from "../pages/PackagedFoods/Snacks/Snacksmain.webp";
-import Sweets from "../pages/PackagedFoods/Sweets/Sweets.webp";
-import Bakery from "../pages/PackagedFoods/Bakery/Bakery.webp";
-import Pickles from "../pages/PackagedFoods/Pickles/Pickles.webp";
+import Biscuits_Cookies from '../../pages/PackagedFoods/Biscuits/Biscuits_Cookies.webp';
+import Breakfastmain from "../../pages/PackagedFoods/BreakFast/Breakfastmain.webp";
+import Chocolatesmain from "../../pages/PackagedFoods/Chocolates/Chocolatesmain.webp";
+import Ketchupmain from "../../pages/PackagedFoods/Ketchups/Ketchupmain.webp";
+import Pastamain from "../../pages/PackagedFoods/Pasta&Noodles/Pastamain.webp";
+import Jamsmain from "../../pages/PackagedFoods/Jams/Jamsmain.webp";
+import Instantmain from "../../pages/PackagedFoods/InstantFood/Instantmain.webp";
+import Snacksmain from "../../pages/PackagedFoods/Snacks/Snacksmain.webp";
+import Sweets from "../../pages/PackagedFoods/Sweets/Sweets.webp";
+import Bakery from "../../pages/PackagedFoods/Bakery/Bakery.webp";
+import Pickles from "../../pages/PackagedFoods/Pickles/Pickles.webp";
 
-// images in main
-import britania from "../pages/PackagedFoods/Biscuits/britania.webp";
-import goodday from "../pages/PackagedFoods/Biscuits/goodday.webp";
-import darkfantacy from "../pages/PackagedFoods/Biscuits/darkfantacy.webp";
-import oreo from "../pages/PackagedFoods/Biscuits/oreo.webp";
-import darkfantacychocochip from '../pages/PackagedFoods/Biscuits/darkfantasychocochip.webp'
-import twtw from '../pages/PackagedFoods/Biscuits/twtw.webp'
-import bourbon from '../pages/PackagedFoods/Biscuits/bourbon.webp'
-import elitecashew from '../pages/PackagedFoods/Biscuits/elitecashew.webp'
-// import goodday12 from '../pages/PackagedFoods/Biscuits/goodday12.webp'
-import hideseek from '../pages/PackagedFoods/Biscuits/hideseek.webp'
-import krackjack from '../pages/PackagedFoods/Biscuits/krackjack.webp'
-import marigold from '../pages/PackagedFoods/Biscuits/marigold.webp'
-import marigold12 from '../pages/PackagedFoods/Biscuits/marigold12.webp'
-import monaco from '../pages/PackagedFoods/Biscuits/monaco.webp'
-import nutrichoice from '../pages/PackagedFoods/Biscuits/nutrichoice.webp'
-import oreochoco from '../pages/PackagedFoods/Biscuits/oreochoco.webp'
-import parleG from '../pages/PackagedFoods/Biscuits/parleG.webp'
-import Treat from '../pages/PackagedFoods/Biscuits/Treat.webp'
-import unibic from '../pages/PackagedFoods/Biscuits/unibic.webp'
+// cards
+import oats from '../../pages/PackagedFoods/BreakFast/oats.webp';
+import chocoks from '../../pages/PackagedFoods/BreakFast/chocoks.webp';
+import oats1 from '../../pages/PackagedFoods/BreakFast/oats1.webp';
+import saffolaoats from '../../pages/PackagedFoods/BreakFast/saffolaoats.webp';
+import noaddedsugar from '../../pages/PackagedFoods/BreakFast/noaddedsugar.webp';
+import almond from '../../pages/PackagedFoods/BreakFast/almond.webp';
+import kchocoalmonts from '../../pages/PackagedFoods/BreakFast/kchocoalmonts.webp';
+import saffola1 from '../../pages/PackagedFoods/BreakFast/saffola1.webp';
+import tatasoulfull from '../../pages/PackagedFoods/BreakFast/tatasoulfull.webp';
+import tatadesivegi from '../../pages/PackagedFoods/BreakFast/tatadesivegi.webp';
+import masalamast from '../../pages/PackagedFoods/BreakFast/masalamast.webp';
+import kellogg from '../../pages/PackagedFoods/BreakFast/kellogg.webp';
+import nutrify from '../../pages/PackagedFoods/BreakFast/nutrify.webp';
+import baggriesfruits from '../../pages/PackagedFoods/BreakFast/baggriesfruits.webp';
+import chocofills from '../../pages/PackagedFoods/BreakFast/chocofills.webp';
 
 
 
@@ -41,163 +36,159 @@ const PackagedFood = () => {
   const products = [
     {
       id: 1,
-      name: "Britannia NutriChoice Hi-Fibre Digestive Biscuits",
-      image: britania,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "QUAKER OATMEAL 400G",
+      image: oats,
+      originalPrice: 90,
+      discountedPrice: 86,
     },
     {
       id: 2,
-      name: "BRITANNIA GOODDAY CASHEW COOKIES 52.5G",
-      image: goodday,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      name: "KELLOGGS CHOCOS",
+      image: chocoks,
+      originalPrice: 70,
+      discountedPrice: 65,
+     
     },
     {
       id: 3,
-      name: "SUNFEAST DARK FANTASY CHOCO FILLS 230G",
-      image: darkfantacy,
+      name: "Quaker Oats",
+      image: oats1,
       originalPrice: 118,
       discountedPrice: 110.8,
       discountPercent: 6,
     },
     {
       id: 4,
-      name: "Cadbury Oreo Original Chocolatey Sandwich Biscuits",
-      image: oreo,
-      originalPrice: 125,
-      discountedPrice: 112,
-      discountPercent: 50,
+      name: "Saffola Oats Masala And Coriander",
+      image: saffolaoats,
+      originalPrice:20,
+      discountedPrice: 18,
+    
     },
     {
       id: 5,
-      name: "Sunfeast Dark Fantasy Original Choco Filled Cookie",
-      image: darkfantacychocochip,
-      originalPrice: 145,
-      discountedPrice: 139,
-      discountPercent: 4,
+      name: "SPAR MUESLI NO ADDED SUGAR",
+      image: noaddedsugar,
+      originalPrice: 200,
+      discountedPrice: 149,
+    
     },
     {
       id: 6,
-      name: "PARLE HIDE AND SEEK CHOCOLATE 100G",
-      image: hideseek,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "QUAKER OATS ",
+      image: oats,
+      originalPrice: 135,
+      discountedPrice: 129,
+    
     },
     {
       id: 7,
-      name: "PARLE BISCUIT GLUCOSE 800G",
-      image: parleG,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      name: "SPAR MUESLI ALMOND N RAISIN",
+      image: almond,
+      originalPrice: 280,
+      discountedPrice: 149,
+      
     },
     {
       id: 8,
-      name: "BRITANNIA MARIEGOLD 64G",
-      image: marigold,
-      originalPrice: 11,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "KELLOGGS CF PILOW CHOCOS FILLS",
+      image: chocofills,
+      originalPrice: 99,
+      discountedPrice: 93,
+
     },
     {
       id: 9,
-      name: "BRITANNIA Elite CASHEW 100G",
-      image: elitecashew,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      name: "SAFFOLLA OATS MASALA",
+      image: saffola1,
+      originalPrice: 240,
+      discountedPrice: 215,
     },
     {
       id: 10,
-      name: "BRITANNIA TREAT CROISSANT MIXED FRUIT COOKIES 47G",
-      image: Treat,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "SOULFULL MASALA OATS TOMATO TWIST",
+      image: tatasoulfull,
+      originalPrice:260,
+      discountedPrice: 249,
     },
     {
-      id: 11,
-      name: "Britannia NutriChoice Hi-Fibre Digestive Biscuits",
-      image: nutrichoice,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      id: 11, 
+      name: "SOULFULL MASALA OATS DESI VEGGIE",
+      image: tatadesivegi,
+      originalPrice: 259,
+      discountedPrice: 249,
+      
     },{
       id: 12,
-      name: "OREO CHOCO CREAM BISCUIT SLG PK 125.25G",
-      image: oreochoco,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "SOULFULL MASALA OATS MAST MASALA",
+      image: masalamast,
+      originalPrice: 259,
+      discountedPrice: 249,
+      
     },
     {
       id: 13,
-      name: "Britannia Marie Gold",
-      image: marigold12,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      name: "KELLOGGS FRUIT LOOPS",
+      image: kellogg,
+      originalPrice: 229,
+      discountedPrice: 215,
+      
     },
     {
       id: 14,
-      name: "PARLE HIDE N SEEK MILANO COOKIES 75G",
-      image: hideseek,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "SUNDROP NUTRIFY HONEY ROASTED OATS",
+      image: nutrify,
+      originalPrice: 159,
+      discountedPrice: 149,
+    
     },
     {
       id: 16,
-      name: "Krack Jack",
-      image: krackjack,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
+      name: "KELLOGGS CHOCOLATE AND ALMONDS GRANOLA",
+      image: kchocoalmonts,
+      originalPrice: 420,
+      discountedPrice: 405,
     },
     {
       id: 17,
-      name: "PARLE HIDE AND SEEK COFFEE 100G",
-      image: parleG,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
+      name: "BAGRRYS FRUIT AND NUT CRANBERRY MUESLI",
+      image: baggriesfruits,
+      originalPrice: 540,
+      discountedPrice:360,
+
     },
     {
       id: 18,
-      name: "Parle Monaco Pizza Flavour Masala Crunch Biscuits",
-      image: monaco,
+      name: "Bagrrys Fruit & Nut Crunchy Muesli With Cranberries",
+      image: baggriesfruits,
       originalPrice: 179,
       discountedPrice: 89.5,
       discountPercent: 50,
     },
-    {
-      id: 19,
-      name: "Unibic",
-      image: unibic,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
-    },
-    {
-      id: 20,
-      name: "BRITANNIA 2020",
-      image: twtw,
-      originalPrice: 179,
-      discountedPrice: 89.5,
-      discountPercent: 50,
-    },
-    {
-      id: 21,
-      name: "BourBon",
-      image: bourbon,
-      originalPrice: 139,
-      discountedPrice: 88,
-      discountPercent: 37,
-    },
+    // {
+    //   id: 19,
+    //   name: "Unibic",
+    //   image: unibic,
+    //   originalPrice: 139,
+    //   discountedPrice: 88,
+    //   discountPercent: 37,
+    // },
+    // {
+    //   id: 20,
+    //   name: "BRITANNIA 2020",
+    //   image: twtw,
+    //   originalPrice: 179,
+    //   discountedPrice: 89.5,
+    //   discountPercent: 50,
+    // },
+    // {
+    //   id: 21,
+    //   name: "BourBon",
+    //   image: bourbon,
+    //   originalPrice: 139,
+    //   discountedPrice: 88,
+    //   discountPercent: 37,
+    // },
   ];
 
   const categories = [

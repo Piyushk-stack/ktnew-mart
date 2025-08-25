@@ -62,6 +62,8 @@ const Navbar = () => {
     navigate("/");
   };
 
+  
+
   return (
     <div className="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
       {/* Top Navbar */}
