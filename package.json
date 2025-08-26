@@ -11,9 +11,15 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "lucide-react": "^0.541.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+<<<<<<< HEAD
     "react-router-dom": "^7.8.2",
+=======
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.8.1",
+>>>>>>> af6a1ae01390e5585a6354182b852a097b20009f
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {

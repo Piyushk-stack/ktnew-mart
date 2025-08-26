@@ -7,7 +7,6 @@ import deals from "../assets/deals.png";
 import cart from "../assets/cart.png";
 import login from "../assets/login.png";
 import grocery from "../assets/grocery.png";
-import fruitsveg from "../assets/fruitsveg.png";
 import packagedfood from "../assets/packagedfood.png";
 import dairybeverages from "../assets/dairybeverages.png";
 import homekitchen from "../assets/homekitchen.png";
@@ -18,18 +17,18 @@ import toysstationary from "../assets/toysstationary.png";
 import luggageandtravel from "../assets/luggageandtravel.png";
 import offline from "../assets/offline.png";
 
+// Categories with path for navigation
 const categories = [
-  { img: grocery, text: "Grocery" },
-  { img: fruitsveg, text: "Fruits & Vegetables" },
-  { img: packagedfood, text: "Packaged Food" },
-  { img: dairybeverages, text: "Dairy & Beverages" },
-  { img: homekitchen, text: "Home & Kitchen" },
-  { img: personalcare, text: "Personal Care" },
-  { img: babycarekids, text: "Baby Care & Kids" },
-  { img: petfoods, text: "Pet Foods" },
-  { img: toysstationary, text: "Toys & Stationery" },
-  { img: luggageandtravel, text: "Luggage & Travel" },
-  { img: offline, text: "Offline" },
+  { img: grocery, text: "Grocery", path: "/grocery" },
+  { img: packagedfood, text: "Packaged Food", path: "/packaged-food" },
+  { img: dairybeverages, text: "Dairy & Beverages", path: "/dairy-beverages" },
+  { img: homekitchen, text: "Home & Kitchen", path: "/home-kitchen" },
+  { img: personalcare, text: "Personal Care", path: "/personal-care" },
+  { img: babycarekids, text: "Baby Care & Kids", path: "/baby-care-kids" },
+  { img: petfoods, text: "Pet Foods", path: "/pet-foods" },
+  { img: toysstationary, text: "Toys & Stationery", path: "/toys-stationery" },
+  { img: luggageandtravel, text: "Luggage & Travel", path: "/luggage-travel" },
+  { img: offline, text: "Offline", path: "/offline" },
 ];
 
 const Navbar = () => {
@@ -62,6 +61,8 @@ const Navbar = () => {
   const handleLogoClick = () => {
     navigate("/");
   };
+
+  
 
   return (
     <div className="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
@@ -129,7 +130,8 @@ const Navbar = () => {
           {categories.map((cat, index) => (
             <li
               key={index}
-              className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 cursor-pointer min-w-max"
+              onClick={() => navigate(cat.path)}
+              className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 cursor-pointer min-w-max hover:text-green-600"
             >
               <img src={cat.img} className="h-8 sm:h-9" alt={cat.text} />
               <span>{cat.text}</span>
