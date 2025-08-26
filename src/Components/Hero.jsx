@@ -5,7 +5,6 @@ import atta from "../pages/img/atta.webp";
 import cookingoil from "../pages/img/cookingoil.webp";
 import ghee from "../pages/img/ghee.webp";
 import masale from "../pages/img/masale.webp";
-import fruits from "../pages/img/fruits.webp";
 import dairy from "../pages/img/dairy.webp";
 import dryfruits from "../pages/img/dryfruits.webp";
 import organicfood from "../pages/img/organicfood.webp";
@@ -71,12 +70,28 @@ const Hero = () => {
     navigate("/breakfast");
   }
 
+  const handleChocolatesClick = () => {
+    navigate("/chocolates");
+  }
+
+  const handlePastaClick = () => {
+    navigate("/pastaa");
+  }
+
+  const handlejamsClick = () => {
+    navigate("/jamss");
+  }
+
+  const handleSweetClick = () => {
+    navigate("/sweets")
+  }
+
   const row1 = [
     { img: atta, label: "Atta, Rice & Dal", onClick: handleGroceryClick },
     { img: cookingoil, label: "Cooking Oil", },
     { img: ghee, label: "Ghee & Vanaspati" },
     { img: masale, label: "Masala & Spices" },
-    { img: fruits, label: "Fruits & Vegetables" },
+    { img: tea, label: "Tea, Coffee & Beverages" },
     { img: dairy, label: "Dairy, Bread & Eggs" },
     { img: dryfruits, label: "Dry Fruits" },
     { img: organicfood, label: "Organic Foods" },
@@ -85,12 +100,12 @@ const Hero = () => {
   const row2 = [
     { img: biscuits, label: "Biscuits & Cookies", onClick: handleSnacksClick },
     { img: breakfast, label: "Breakfast Cereals", onClick:handleBreakfastClick },
-    { img: pasta, label: "Pasta & Noodles" },
-    { img: jams, label: "Jams & Spreads" },
-    { img: sweets, label: "Sweets & Chocolates" },
+    { img: sweets, label: "Chocolates", onClick: handleChocolatesClick },
+    { img: pasta, label: "Pasta & Noodles", onClick: handlePastaClick },
+    { img: jams, label: "Jams & Spreads", onClick: handlejamsClick },
     { img: chips, label: "Chips & Namkeens" },
     { img: drinks, label: "Drinks & Juices" },
-    { img: tea, label: "Tea, Coffee & Beverages" },
+    { img: sweets, label: "Sweets", onClick: handleSweetClick },
   ];
 
   const row3 = [
@@ -113,7 +128,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="mx-4 sm:mx-8 lg:mx-20 mt-45">
+      <div className="mx-4 sm:mx-8 lg:mx-20 mt-40">
         <h1
           className="text-lg sm:text-xl p-2 sm:p-3 mt-3 font-semibold cursor-pointer hover:text-blue-600"
           onClick={handleGroceryClick}
@@ -144,12 +159,12 @@ const Hero = () => {
           <img
             src={img2}
             alt="Ad Banner 1"
-            className="w-full md:w-1/2 h-40 sm:h-60 md:h-80 object-cover rounded-lg shadow-md"
+            className="w-full md:w-1/2 h-40 sm:h-60 md:h-190 object-cover rounded-lg shadow-md"
           />
           <img
             src={img1}
             alt="Ad Banner 2"
-            className="w-full md:w-1/2 h-40 sm:h-60 md:h-80 object-cover rounded-lg shadow-md"
+            className="w-full md:w-1/2 h-40 sm:h-60 md:h-190 object-cover rounded-lg shadow-md"
           />
         </div>
       </div>
