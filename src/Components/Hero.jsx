@@ -1,16 +1,17 @@
 import React from 'react'
 import Navbar from './Navbar.jsx'
-import First from '../pages/First.jsx'
-import Second from '../pages/Second.jsx'
-import Grocery from '../pages/Grocery.jsx'
+import Ghee from '../pages/Grocery/gheeandvanaspati/ghee.jsx'
+
 
 const Hero = () => {
   return (
     <div>
-        <Navbar/>
-        <First/>.  
+         <Navbar/>
+         {/* <First/>.  
         <Second/>
-        <Grocery/>
+        <Grocery/> 
+       <Cookingoil/> */}
+       <Ghee/>
     </div>
   )
 }
